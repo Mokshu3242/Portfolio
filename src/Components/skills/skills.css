@@ -1,0 +1,121 @@
+.skills_container {
+  grid-template-columns: repeat(2, 350px);
+  justify-content: center;
+  column-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.skills_content {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+}
+
+.skills_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.skills .bx-badge-check {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: var(--title-color);
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+
+.skills_level {
+  font-size: var(--tiny-font-size);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+}
+
+/* Add border to skills__border div */
+.skills__border {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  width: 100%;
+
+}
+
+.skills__border .section_subtitle {
+  margin-bottom: 1rem; /*reduce gap*/
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills_container {
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 2rem;
+  }
+
+  .skills_content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills_container {
+    grid-template-columns: repeat(1, 350px);
+    column-gap: 2rem;
+  }
+
+  .skills_content {
+    padding: 2rem;
+  }
+
+  .skills__border {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills_content {
+    padding: 2rem;
+  }
+
+  .skills_title {
+    font-size: var(--small-font-size);
+  }
+
+  .skills .bx-badge-check {
+    font-size: 0.8rem;
+  }
+
+  .skills_name {
+    font-size: var(--tiny-font-size);
+  }
+
+  .skills_level {
+    font-size: 0.8rem;
+  }
+  .skills__border {
+    max-width: 365px;
+    width: 100%;
+  }
+}

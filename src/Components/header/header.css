@@ -1,0 +1,148 @@
+.header {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  margin-top: 1rem;
+  height: calc(var(--header-height)+ 1.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.nav_logo,
+.nav_toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav_list {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.nav_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: color 0.3s;
+}
+
+.nav_icon,
+.nav_close,
+.nav_toggle {
+  display: none;
+}
+
+/* Active link */
+.active-link,
+.nav_link:hover {
+  color: var(--title-color-dark);
+}
+ 
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header {
+    top: initial;
+  }
+
+  .nav_logo {
+    font-size: 0.8rem;
+  }
+
+  .nav_list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    top: initial;
+    height: 65px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav {
+    height: var(--header-height);
+    margin-top: 0.5rem;
+  }
+
+  .nav_menu {
+    position: fixed;
+    bottom: -110%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Show Menu */
+  .show_menu {
+    bottom: -80%;
+  }
+
+  .nav_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .nav_icon {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav_close {
+    position: absolute;
+    right: 1.3rem;
+    top: 10.5rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--title-color);
+  }
+
+  .nav_close:hover {
+    color: var(--title-color-dark);
+  }
+
+  .nav_toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .nav_icon,
+  .nav_close,
+  .nav_toggle {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav_menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+
+  .nav_list {
+    column-gap: 0;
+  }
+}

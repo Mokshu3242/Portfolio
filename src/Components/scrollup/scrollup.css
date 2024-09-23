@@ -1,0 +1,27 @@
+.scroll-up {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 3rem;
+    background-color: var(--title-color);
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: opacity 0.4s, visibility 0.4s; /* Smooth transition */
+    visibility: hidden; /* Hidden by default */
+    opacity: 0; /* Fully transparent */
+}
+
+.scroll-up.show {
+    visibility: visible; /* Show when scrolling */
+    opacity: 1; /* Fully opaque */
+}
+
+.scrollup_icon {
+    font-size: 1.5rem;
+    color: var(--container-color);
+}
+
+.scroll-up:hover {
+    background-color: var(--title-color-dark);
+}

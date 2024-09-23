@@ -1,0 +1,274 @@
+/* Contact Section Styling */
+.contact_container {
+  display: grid;
+  column-gap: 6rem;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.contact_title {
+  text-align: center;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+  color: var(--title-color);
+}
+
+.contact_info {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 300px;
+  justify-content: center;
+}
+
+.contact_card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.contact_card-icon {
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-25);
+}
+
+.contact_card-title,
+.contact_card-data {
+  font-size: var(--small-font-size);
+}
+
+.contact_card-title {
+  font-weight: var(--small-font-size);
+}
+
+.contact_card-data {
+  display: block;
+  margin-bottom: var(--mb-0-75);
+}
+
+.contact_button {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  justify-content: center;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.contact_button-icon {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contact_button:hover .contact_button-icon {
+  transform: translate(5px);
+}
+
+.contact_form {
+  width: 360px;
+}
+
+.contact_form-div {
+  position: relative;
+  margin-bottom: var(--mb-2);
+  height: 4rem;
+}
+
+.contact_form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: none;
+  border-radius: 0.75rem;
+  color: var(--text-color);
+  outline: none;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.contact_form-tag {
+    position: absolute;
+    top: -0.75rem;
+    left: 1.25rem;
+    font-size: var(--smaller-font-size);
+    padding: 0.25rem;
+    background-color: var(--body-color);
+    z-index: 10;
+  }
+
+.contact_form-area{
+    height: 11rem;
+    textarea{
+        resize: none;
+    }
+}
+
+.contact {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.contact_content {
+  background: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--title-color);
+  color: white;
+  border-radius: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button__icon {
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}
+
+.button:hover .button__icon {
+  transform: translateX(5px);
+}
+
+/* Responsive Styling for Tablets */
+@media screen and (min-width: 768px) and (max-width: 928px) {
+    .contact_container {
+      grid-template-columns: repeat(2, 1fr); /* Still 2 columns, but make them equal width */
+      column-gap: 3rem; /* Reduce column gap */
+      row-gap: 2rem; /* Add some row gap for spacing between sections */
+    }
+  
+    .contact_card {
+      padding: 0.75rem; /* Reduce padding */
+      border-radius: 0.5rem;
+    }
+  
+    .contact_title {
+      font-size: 1.75rem; /* Reduce title font size */
+    }
+  
+    .contact_card-icon {
+      font-size: 1.5rem; /* Smaller icons */
+      margin-bottom: 0.5rem;
+    }
+  
+    .contact_card-title,
+    .contact_card-data {
+      font-size: var(--small-font-size);
+      font-size: 0.875rem; /* Slightly smaller text */
+    }
+  
+    .contact_form {
+      width: 300px; /* Slightly smaller form width */
+    }
+  
+    .contact_form-div {
+      height: 3.5rem; /* Smaller height for form inputs */
+    }
+  
+    .contact_form-input {
+      padding: 1rem; /* Less padding for input fields */
+      font-size: 0.875rem; /* Smaller font size in form */
+    }
+  
+    .contact_form-tag {
+      font-size: 0.75rem; /* Smaller font size for form labels */
+    }
+  
+    .button {
+      padding: 0.5rem 1rem; /* Reduce button size */
+      font-size: 0.875rem; /* Smaller button font */
+    }
+  
+    .button__icon {
+      font-size: 0.875rem; /* Smaller icon */
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .contact_container {
+      grid-template-columns: 1fr;
+      column-gap: 2rem;
+      row-gap: 2rem;
+    }
+  
+    .contact_form {
+      width: 100%;
+    }
+  
+    .contact_form-input {
+      padding: 1rem;
+    }
+  
+    .contact_form-tag {
+      font-size: var(--smaller-font-size);
+    }
+  }
+  
+  /* Responsive Styling for Mobile Devices */
+  @media screen and (max-width: 480px) {
+    .contact_title {
+      font-size: 1.5rem;
+    }
+  
+    .contact_container {
+      padding: 1rem;
+      grid-template-columns: 1fr;
+    }
+  
+    .contact_info {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+    }
+  
+    .contact_card {
+      padding: 1rem;
+    }
+  
+    .contact_card-title,
+    .contact_card-data {
+      font-size: var(--small-font-size);
+    }
+  
+    .contact_form {
+      width: 100%;
+    }
+  
+    .contact_form-input {
+      padding: 1rem;
+    }
+  
+    .contact_form-tag {
+      font-size: 0.8rem;
+    }
+  
+    .button {
+      padding: 0.5rem 1rem;
+    }
+  
+    .button__icon {
+      font-size: 1rem;
+    }
+  }
