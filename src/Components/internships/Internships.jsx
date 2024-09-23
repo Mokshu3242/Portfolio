@@ -59,13 +59,13 @@ const Internships = () => {
 
             <div className="internships_container container grid">
                 {internshipsData.map((internship, index) => (
-                    <div className="internships_content" key={index}>
+                    <div className="internships_content internships_button" key={index} onClick={() => toggleModal(index)}>
                         <div>
                             <i className={`uil ${internship.icon} internships_icon`}></i>
                             <h3 className="internships_title">{internship.title}</h3>
                             <h4 className="internships_subtitle">{internship.year}</h4>
                         </div>
-                        <span className="internships_button" onClick={() => toggleModal(index)}>
+                        <span className="internships_button">
                             View More
                             <i className="uil uil-arrow-right internships_button-icon"></i>
                         </span>
