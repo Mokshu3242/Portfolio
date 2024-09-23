@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/Mokshad.png";
+import AboutImg from "../../assets/Mokshad1.webp";
 import CV from "../../assets/MokshadCv.pdf";
 import Information from "./Information";
 
