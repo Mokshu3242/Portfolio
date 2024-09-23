@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: space-between; /* This ensures that the content and the button stay aligned */
     height: 330px; /* You can adjust this height as needed */
+    cursor: pointer;
 }
 
 .internships_icon {
