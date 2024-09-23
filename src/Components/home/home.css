@@ -27,8 +27,7 @@
 }
 
 .home_social-icon:hover{
-    color: white;
-   background-color: var(--title-color); 
+   color: var(--title-color-dark); 
 }
 
 .home_title{
@@ -164,6 +163,10 @@
         top: 0.8rem;
     }
 
+    .home_justify{
+        text-align: justify;
+    }
+
     .home_description{
         max-width: initial;
         margin-bottom: var(--mb-2-5);
@@ -192,7 +195,7 @@
 
     .home_img{
         order: initial;
-        justify-self: initial;
+        justify-self: inherit;
     }
 
     .home_data{
