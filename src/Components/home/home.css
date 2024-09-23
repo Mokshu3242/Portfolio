@@ -27,6 +27,7 @@
 }
 
 .home_social-icon:hover{
+    color: white;
    background-color: var(--title-color); 
 }
 
