@@ -124,6 +124,7 @@
     .home_content {
         grid-template-columns: 150px repeat(2, 1fr);
         column-gap: 2.5rem;
+        text-align: justify;
     }
     
     .home_title {
@@ -146,6 +147,7 @@
     .home_content{
         grid-template-columns: 100px repeat(2, 1fr);
         column-gap: 1.25rem;
+        text-align: justify;
     }
 
     .home_hand{
@@ -191,6 +193,7 @@
     .home_content{
         grid-template-columns: 0.5fr 3fr;
         padding-top: 2.5rem;
+        text-align: justify;
     }
 
     .home_img{
@@ -222,6 +225,7 @@
     .home_content{
         row-gap: 1rem;
         justify-content: center;
+        text-align: justify;
     }
 
     .home_title {
