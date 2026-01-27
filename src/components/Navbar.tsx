@@ -98,13 +98,13 @@ export default function Navbar() {
 
       {/* Mobile Menu - Bottom Sheet */}
       <div
-        className={`md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 rounded-t-3xl shadow-2xl transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-black rounded-t-3xl shadow-2xl transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-y-0" : "translate-y-full"
         }`}
       >
         {/* Handle bar */}
         <div className="flex justify-center pt-3 pb-2">
-          <div className="w-12 h-1 bg-gray-300 dark:bg-gray-600 rounded-full" />
+          <div className="w-12 h-1 bg-black/20 dark:bg-white/20 rounded-full" />
         </div>
 
         {/* Menu Grid */}
@@ -117,9 +117,9 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="flex flex-col items-center gap-2 p-4 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                  className="flex flex-col items-center gap-2 p-4 bg-black/5 dark:bg-white/5 rounded-2xl hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
                 >
-                  <Icon size={24} className="text-gray-700 dark:text-gray-300" />
+                  <Icon size={24} className="text-black dark:text-white" />
                   <span className="text-sm text-gray-900 dark:text-white font-medium">
                     {link.name}
                   </span>
@@ -134,7 +134,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
-            className="block w-full text-center px-6 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition font-medium"
+            className="block w-full text-center px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full hover:bg-black/80 dark:hover:bg-white/90 transition font-medium"
           >
             View Resume
           </a>
