@@ -33,7 +33,7 @@ export default function Hero() {
   }, [index, typing]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 mt-6 transition-colors duration-300 bg-white dark:bg-black">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 mt-6 transition-colors duration-300 bg-white dark:bg-black">
       <div className="max-w-4xl w-full text-center">
         <div className="space-y-6">
           {/* Greeting */}
@@ -44,7 +44,7 @@ export default function Hero() {
             Hi,
             <br />
             I'm{" "}
-            <span className="bg-gradient-to-r from-orange-500 via-yellow-500 to-amber-500 dark:from-yellow-400 dark:to-yellow-600 bg-clip-text text-transparent inline-block">
+            <span className="bg-linear-to-r from-orange-500 via-yellow-500 to-amber-500 dark:from-yellow-400 dark:to-yellow-600 bg-clip-text text-transparent inline-block">
               {displayedName}
               <span className="inline-block animate-blink">|</span>
             </span>

@@ -4,6 +4,10 @@ import Image from "next/image";
 import { FiAward, FiFolder, FiHeadphones } from "react-icons/fi"; // Import icons
 
 export default function About() {
+  function setMenuOpen(arg0: boolean): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <section
       id="about"
@@ -11,7 +15,7 @@ export default function About() {
     >
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
         {/* Left: Image */}
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <Image
             src="/image.png" // replace with your uploaded image path
             alt="Mokshad Sankhe"
@@ -58,7 +62,9 @@ export default function About() {
           {/* Download CV Button */}
           <a
             href="/Resume.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
             className="inline-flex items-center gap-2 mt-1 px-6 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-black rounded-full font-medium hover:scale-105 transition-transform duration-300"
           >
             View Resume

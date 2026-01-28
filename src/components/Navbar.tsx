@@ -23,7 +23,7 @@ export default function Navbar() {
     { name: "About", href: "#about", icon: User },
     { name: "Skills", href: "#skills", icon: Code },
     { name: "Projects", href: "#projects", icon: FileText },
-    { name: "Qualifications", href: "#qualifications", icon: Award },
+    { name: "Education", href: "#education", icon: Award },
     { name: "Internship", href: "#internship", icon: Briefcase },
     { name: "Contact", href: "#contact", icon: Mail },
   ];
@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           {/* Logo */}
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-            <a href="#home">Mokshad Sankhe</a>
+            <a href="#hero">Mokshad Sankhe</a>
           </h1>
 
           {/* Desktop Links (centered) */}
