@@ -24,7 +24,7 @@ export default function Navbar() {
     { name: "Skills", href: "#skills", icon: Code },
     { name: "Projects", href: "#projects", icon: FileText },
     { name: "Education", href: "#education", icon: Award },
-    { name: "Internship", href: "#internship", icon: Briefcase },
+    { name: "Experience", href: "#experience", icon: Briefcase },
     { name: "Contact", href: "#contact", icon: Mail },
   ];
 

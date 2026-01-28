@@ -38,9 +38,9 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="min-h-screen flex items-center justify-center py-20 px-6 transition-colors duration-300 bg-white dark:bg-black"
+      className="min-h-screen flex items-center justify-center py-20 px-6 transition-colors duration-300 bg-white dark:bg-black "
     >
-      <div className="max-w-5xl w-full">
+      <div className="max-w-5xl w-full ">
         {/* Section Header */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-3 mb-4">
@@ -52,7 +52,8 @@ export default function Education() {
         </div>
 
         {/* Timeline Container */}
-        <div className="relative">
+<div className="relative hidden md:block">
+
           {/* Vertical Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-300 dark:bg-gray-700"></div>
 
