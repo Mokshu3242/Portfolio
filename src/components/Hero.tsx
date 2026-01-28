@@ -48,7 +48,7 @@ export default function Hero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 mt-4 sm:mt-6 transition-colors duration-300 bg-white dark:bg-black">
       <div className="max-w-4xl w-full text-center">
-        <div className="space-y-4 sm:space-y-6">
+        <div className="space-y-4 sm:space-y-2">
           {/* Greeting */}
           <div className="inline-block text-sm sm:text-base">👋 Welcome to my portfolio</div>
 
