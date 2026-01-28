@@ -89,12 +89,12 @@ export default function Hero() {
           </div>
 
           {/* Social Media Links */}
-          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-3 sm:gap-4 pt-6 sm:pt-8 px-4 max-w-md sm:max-w-none mx-auto">
+          <div className="flex flex-nowrap justify-center gap-2 sm:gap-4 pt-6 sm:pt-8 px-2 sm:px-4 overflow-x-auto mx-auto">
             <a
               href="https://github.com/Mokshu3242"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full transition-all duration-300 border border-gray-300 dark:border-gray-700"
+              className="group flex items-center justify-center gap-2 px-3 sm:px-5 py-2.5 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full transition-all duration-300 border border-gray-300 dark:border-gray-700 flex-shrink-0"
               aria-label="GitHub"
             >
               <FaGithub className="w-5 h-5" />
@@ -104,7 +104,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/mokshad-sankhe"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 bg-blue-50 dark:bg-blue-900/30 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-blue-700 dark:text-blue-400 rounded-full transition-all duration-300 border border-blue-200 dark:border-blue-800"
+              className="group flex items-center justify-center gap-2 px-3 sm:px-5 py-2.5 bg-blue-50 dark:bg-blue-900/30 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-blue-700 dark:text-blue-400 rounded-full transition-all duration-300 border border-blue-200 dark:border-blue-800 flex-shrink-0"
               aria-label="LinkedIn"
             >
               <FaLinkedin className="w-5 h-5" />
@@ -114,7 +114,7 @@ export default function Hero() {
               href="https://leetcode.com/u/mokshu3242/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 bg-sky-50 dark:bg-sky-900/30 hover:bg-sky-100 dark:hover:bg-sky-900/50 text-sky-700 dark:text-sky-400 rounded-full transition-all duration-300 border border-sky-200 dark:border-sky-800"
+              className="group flex items-center justify-center gap-2 px-3 sm:px-5 py-2.5 bg-sky-50 dark:bg-sky-900/30 hover:bg-sky-100 dark:hover:bg-sky-900/50 text-sky-700 dark:text-sky-400 rounded-full transition-all duration-300 border border-sky-200 dark:border-sky-800 flex-shrink-0"
               aria-label="LeetCode"
             >
               <SiLeetcode className="w-5 h-5" />
@@ -122,7 +122,7 @@ export default function Hero() {
 
             <a
               href="mailto:mokshadsankhe@gmail.com"
-              className="group flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 bg-purple-50 dark:bg-purple-900/30 hover:bg-purple-100 dark:hover:bg-purple-900/50 text-purple-700 dark:text-purple-400 rounded-full transition-all duration-300 border border-purple-200 dark:border-purple-800"
+              className="group flex items-center justify-center gap-2 px-3 sm:px-5 py-2.5 bg-purple-50 dark:bg-purple-900/30 hover:bg-purple-100 dark:hover:bg-purple-900/50 text-purple-700 dark:text-purple-400 rounded-full transition-all duration-300 border border-purple-200 dark:border-purple-800 flex-shrink-0"
               aria-label="Email"
             >
               <HiMail className="w-5 h-5" />
