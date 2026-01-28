@@ -54,9 +54,9 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900 dark:text-white transition-colors duration-300">
-            Hi,
+            Hi, I'm{" "}
             <br />
-            I'm{" "}
+            
             <span className="bg-linear-to-r from-orange-500 via-yellow-500 to-amber-500 dark:from-yellow-400 dark:to-yellow-600 bg-clip-text text-transparent inline-block">
               {displayedName}
               <span className="inline-block animate-blink">|</span>
