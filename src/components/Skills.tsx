@@ -128,15 +128,17 @@ export default function Skills() {
             <div key={category.title} className="break-inside-avoid">
               {/* Pinterest Card */}
               <div
-  className="group relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer"
-  onClick={() => {
-    if (window.innerWidth < 768) {
-      setExpandedCategory(
-        expandedCategory === category.title ? null : category.title
-      );
-    }
-  }}
->
+                className="group relative bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                onClick={() => {
+                  if (window.innerWidth < 768) {
+                    setExpandedCategory(
+                      expandedCategory === category.title
+                        ? null
+                        : category.title,
+                    );
+                  }
+                }}
+              >
                 {/* Gradient Header */}
                 <div
                   className={`h-24 sm:h-32 bg-linear-to-br ${category.gradient} relative overflow-hidden`}

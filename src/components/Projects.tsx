@@ -158,15 +158,15 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen py-2 px-6 bg-white dark:bg-black transition-colors duration-300"
+      className="min-h-screen py-6 px-4 sm:px-6 bg-white dark:bg-black transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        <div className="text-center mb-10 px-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Projects
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             A collection of my recent work showcasing AI/ML solutions and
             full-stack applications
           </p>
@@ -177,25 +177,28 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-gray-200 dark:border-gray-700"
+              onClick={() => openModal(project)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === "Enter" && openModal(project)}
+              className="cursor-pointer bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-gray-200 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             >
               {/* Horizontal Layout */}
-              <div className="flex flex-col sm:flex-row items-start p-6 gap-6">
+              <div className="flex flex-col sm:flex-row items-start p-4 sm:p-6 gap-4 sm:gap-6">
                 {/* Left Side - Icon */}
                 <div className="shrink-0">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-linear-to-br from-yellow-400 to-orange-500 dark:from-yellow-600 dark:to-orange-700 flex items-center justify-center text-white text-3xl sm:text-4xl font-bold shadow-lg">
-                    {project.name.charAt(0)}
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl bg-linear-to-br from-yellow-400 to-orange-500 dark:from-yellow-600 dark:to-orange-700 flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-lg">                    {project.name.charAt(0)}
                   </div>
                 </div>
 
                 {/* Middle - Content */}
                 <div className="grow min-w-0">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors">
                     {project.name}
                   </h3>
 
                   {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {project.techStack.slice(0, 4).map((tech, index) => (
                       <span
                         key={index}
@@ -213,14 +216,15 @@ export default function Projects() {
                 </div>
 
                 {/* Right Side - Read More Button */}
-                <div className="shrink-0 self-center">
+                <div className="shrink-0 w-full sm:w-auto self-center">
                   <button
-                    onClick={() => openModal(project)}
-                    className="flex items-center gap-2 px-6 py-3 bg-yellow-500 dark:bg-yellow-600 text-white font-medium rounded-lg hover:bg-yellow-600 dark:hover:bg-yellow-700 hover:gap-3 transition-all duration-300 whitespace-nowrap"
-                  >
-                    Read More
-                    <FaExternalLinkAlt className="w-3 h-3" />
-                  </button>
+  type="button"
+  className="flex items-center justify-center gap-2 px-5 py-3 w-full sm:w-auto bg-yellow-500 dark:bg-yellow-600 text-white font-medium rounded-lg hover:bg-yellow-600 dark:hover:bg-yellow-700 transition-all duration-300 whitespace-nowrap"
+>
+  Read More
+  <FaExternalLinkAlt className="w-3 h-3" />
+</button>
+
                 </div>
               </div>
             </div>
@@ -235,16 +239,14 @@ export default function Projects() {
           onClick={closeModal}
         >
           <div
-            className="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp"
+            className="bg-white dark:bg-gray-800 rounded-xl sm:rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl animate-slideUp"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-6 flex justify-between items-start z-10">
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                  {selectedProject.name}
-                </h3>
-              </div>
+            <div className="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 p-4 sm:p-6 flex justify-between items-start z-10">
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
+                {selectedProject.name}
+              </h3>
               <button
                 onClick={closeModal}
                 className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors"
@@ -255,20 +257,20 @@ export default function Projects() {
             </div>
 
             {/* Modal Content */}
-            <div className="p-6">
+            <div className="p-4 sm:p-6">
               {/* Description */}
               <div className="mb-6">
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h4 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   Description
                 </h4>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
                   {selectedProject.description}
                 </p>
               </div>
 
               {/* Tech Stack */}
               <div className="mb-6">
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h4 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   Tech Stack
                 </h4>
                 <div className="flex flex-wrap gap-2">
@@ -284,11 +286,11 @@ export default function Projects() {
               </div>
 
               {/* Links */}
-              <div className="space-y-3">
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <div>
+                <h4 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   Links
                 </h4>
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                   {selectedProject.frontendLink && (
                     <a
                       href={selectedProject.frontendLink}
