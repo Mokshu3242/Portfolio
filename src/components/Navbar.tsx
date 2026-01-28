@@ -30,7 +30,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full fixed top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-md transition-colors duration-300">
+      <nav className="w-full fixed top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-[0_2px_8px_rgba(0,0,0,0.25)] dark:shadow-[0_2px_8px_rgba(255,255,255,0.1)] transition-colors duration-300">
+
+
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           {/* Logo */}
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">

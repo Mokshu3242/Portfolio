@@ -2,13 +2,15 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ThemeDebug from "@/components/ThemeDebug";  // Add this import
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <div className="bg-white dark:bg-black min-h-screen font-sans transition-colors duration-300">
       <Navbar />
       <main className="max-w-4xl mx-auto">
-        {/* <Hero /> */}
+        <Hero />
+        <About/>
       </main>
       <ThemeDebug />  {/* Add this component */}
     </div>
