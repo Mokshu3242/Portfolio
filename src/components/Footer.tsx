@@ -27,7 +27,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-white dark:bg-black transition-colors duration-300">
+    <footer className="w-full bg-white dark:bg-black transition-colors duration-300 mt-[-10]">
       {/* Main Footer Content */}
       <div className="w-full bg-white dark:bg-black py-12">
         <div className="max-w-7xl mx-auto px-6">
