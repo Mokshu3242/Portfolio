@@ -34,7 +34,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black transition-colors duration-300"
+      className="min-h-screen py-6 px-4 sm:px-6 lg:px-4 bg-white dark:bg-black transition-colors duration-300"
     >
       <Toaster position="top-right" reverseOrder={false} />
 

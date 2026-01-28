@@ -31,9 +31,9 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="w-full bg-white dark:bg-black py-12">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {/* Brand Section */}
-            <div className="md:col-span-2">
+            <div className="sm:col-span-2 md:col-span-2">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
                 Mokshad Sankhe
               </h2>
@@ -127,13 +127,11 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section - Full Width */}
-      <div className="w-full bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-6">
-        <div className="max-w-7xl mx-auto px-6">
+      <div className="w-full bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-2">
+        <div className="max-w-7xl mx-auto px-2">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-1">
-              © {new Date().getFullYear()} Mokshad Sankhe. Made with 
-              <Heart size={14} className="text-red-500 fill-red-500" /> 
-              and lots of coffee.
+            <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-1 text-center sm:text-left">
+              © {new Date().getFullYear()} Mokshad Sankhe. 
             </p>
 
             {/* Back to Top Button */}
