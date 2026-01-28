@@ -98,7 +98,6 @@ export default function Hero() {
               aria-label="GitHub"
             >
               <FaGithub className="w-5 h-5" />
-              <span className="text-sm font-medium">GitHub</span>
             </a>
 
             <a
@@ -109,7 +108,6 @@ export default function Hero() {
               aria-label="LinkedIn"
             >
               <FaLinkedin className="w-5 h-5" />
-              <span className="text-sm font-medium">LinkedIn</span>
             </a>
 
             <a
@@ -120,7 +118,6 @@ export default function Hero() {
               aria-label="LeetCode"
             >
               <SiLeetcode className="w-5 h-5" />
-              <span className="text-sm font-medium">LeetCode</span>
             </a>
 
             <a
@@ -129,7 +126,6 @@ export default function Hero() {
               aria-label="Email"
             >
               <HiMail className="w-5 h-5" />
-              <span className="text-sm font-medium">Email</span>
             </a>
           </div>
         </div>
