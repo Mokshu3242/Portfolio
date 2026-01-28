@@ -19,7 +19,7 @@ export default function Footer() {
     { name: "Education", href: "#education" },
     { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
-    { name: "Resume", href: "/resume.pdf" },
+    { name: "Resume", href: "/Resume.pdf" },
   ];
 
   const scrollToTop = () => {
