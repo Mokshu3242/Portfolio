@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           {/* Logo */}
           <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-            <a href="#hero">Mokshad Sankhe</a>
+            <a href="/">Mokshad Sankhe</a>
           </h1>
 
           {/* Desktop Links (centered) */}
