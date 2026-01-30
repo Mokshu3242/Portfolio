@@ -132,7 +132,7 @@ export default function Navbar() {
 
           {/* Resume Button */}
           <a
-            href="/resume.pdf"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
